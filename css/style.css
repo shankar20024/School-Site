@@ -157,6 +157,7 @@
     font-size: 2.5rem;
   font-weight: bold;
   }
+
   .about-section {
     min-height: 76vh;
     padding: 4rem 2rem;
@@ -198,6 +199,44 @@
     to {
       opacity: 1;
       transform: translateY(0);
+    }
+  }
+  @media (max-width: 768px) {
+    .about-section {
+      padding: 3rem 1.5rem;
+    }
+  
+    .about-container {
+      padding: 2.5rem 1.5rem;
+    }
+  
+    .about-container h2 {
+      font-size: 1.8rem;
+    }
+  
+    .about-container p {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Mobile devices (480px and below) */
+  @media (max-width: 480px) {
+    .about-section {
+      padding: 2rem 1rem;
+    }
+  
+    .about-container {
+      padding: 2rem 1rem;
+    }
+  
+    .about-container h2 {
+      font-size: 1.6rem;
+      text-align: center;
+    }
+  
+    .about-container p {
+      font-size: 0.95rem;
+      text-align: justify;
     }
   }
   .page-header {
