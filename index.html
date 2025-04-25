@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carmelite Convent English School</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+    <nav class="main-nav">
+        <div class="brand">
+          <img src="./images/logo.jpg" alt="logo" class="logo">
+          <span class="school-name">Carmelite Convent English School</span>
+        </div>
+        
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+      
+        <ul id="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="admission.html" >Admission</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      
+  <header class="hero">
+    <div class="hero-text">
+      <h2>Nurturing Values. Inspiring Excellence.</h2>
+      <p>Empowering students with knowledge, discipline, and creativity.</p>
+      <a href="about.html" class="btn">Explore More</a>
+    </div>
+  </header>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2015–<span id="year"></span> Carmelite Convent English School. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const navLinks = document.getElementById("nav-links");
+      navLinks.classList.toggle("show");
+    }
+
+    // Auto year update
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>

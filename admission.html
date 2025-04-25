@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admission - Carmelite Convent English School</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="main-nav">
+    <div class="brand">
+      <img src="./images/logo.jpg" alt="logo" class="logo">
+      <span class="school-name">Carmelite Convent English School</span>
+    </div>
+    
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+  
+    <ul id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="admission.html" class="active">Admission</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <h2>Admission</h2>
+  </section>
+
+  <!-- Admission Info -->
+  <section class="admission-section">
+    <div class="admission-container">
+      <p>We warmly welcome you to join the Carmelite family. Our admission process is simple, transparent, and student-focused.</p>
+      <ul class="admission-steps">
+        <li><strong>Step 1:</strong> Fill out the offline application form</li>
+        <li><strong>Step 2:</strong> Submit required documents</li>
+        <li><strong>Step 3:</strong> Attend interaction/assessment (if applicable)</li>
+        <li><strong>Step 4:</strong> Confirm admission with fee payment</li>
+      </ul>
+
+      <a href="contact.html" class="btn">Contact for Admission</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2015–<span id="year"></span> Carmelite Convent English School. All rights reserved.</p>
+  </footer>
+
+  <!-- JS -->
+  <script>
+    function toggleMenu() {
+      const navLinks = document.getElementById("nav-links");
+      navLinks.classList.toggle("show");
+    }
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>

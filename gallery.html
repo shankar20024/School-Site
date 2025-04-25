@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery - Carmelite Convent English School</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="main-nav">
+    <div class="brand">
+      <img src="./images/logo.jpg" alt="logo" class="logo" />
+      <span class="school-name">Carmelite Convent English School</span>
+    </div>
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+    <ul id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="admission.html">Admission</a></li>
+      <li><a href="gallery.html" class="active">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <h2>Our Gallery</h2>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="gallery-section">
+    <div class="gallery-grid">
+      <img src="./images/logo.jpg" alt="School Event" onclick="openLightbox(this.src)" />
+      <img src="./images/img2.jpg" alt="Students Activity" onclick="openLightbox(this.src)" />
+      <img src="./images/img3.jpg" alt="Cultural Function" onclick="openLightbox(this.src)" />
+      <img src="./images/img4.jpg" alt="Science Exhibition" onclick="openLightbox(this.src)" />
+      <img src="./images/img5.jpg" alt="Sports Day" onclick="openLightbox(this.src)" />
+      <img src="./images/img6.jpg" alt="Annual Day" onclick="openLightbox(this.src)" />
+      <img src="./images/logo7.jpg" alt="School Event" onclick="openLightbox(this.src)" />
+      <img src="./images/img8.jpg" alt="Students Activity" onclick="openLightbox(this.src)" />
+      <img src="./images/img9.jpg" alt="Cultural Function" onclick="openLightbox(this.src)" />
+      <img src="./images/img10.jpg" alt="Science Exhibition" onclick="openLightbox(this.src)" />
+      <img src="./images/img11.jpg" alt="Sports Day" onclick="openLightbox(this.src)" />
+      <img src="./images/img12.jpg" alt="Annual Day" onclick="openLightbox(this.src)" />
+      <img src="./images/logo1.jpg" alt="School Event" onclick="openLightbox(this.src)" />
+      <img src="./images/img2.jpg" alt="Students Activity" onclick="openLightbox(this.src)" />
+      <img src="./images/img3.jpg" alt="Cultural Function" onclick="openLightbox(this.src)" />
+      <img src="./images/img4.jpg" alt="Science Exhibition" onclick="openLightbox(this.src)" />
+      <img src="./images/img5.jpg" alt="Sports Day" onclick="openLightbox(this.src)" />
+      <img src="./images/img6.jpg" alt="Annual Day" onclick="openLightbox(this.src)" />
+      <img src="./images/log1.jpg" alt="School Event" onclick="openLightbox(this.src)" />
+      <img src="./images/img2.jpg" alt="Students Activity" onclick="openLightbox(this.src)" />
+      <img src="./images/img3.jpg" alt="Cultural Function" onclick="openLightbox(this.src)" />
+      <img src="./images/img4.jpg" alt="Science Exhibition" onclick="openLightbox(this.src)" />
+      <img src="./images/img5.jpg" alt="Sports Day" onclick="openLightbox(this.src)" />
+      <img src="./images/img6.jpg" alt="Annual Day" onclick="openLightbox(this.src)" />
+      <img src="./images/log1.jpg" alt="School Event" onclick="openLightbox(this.src)" />
+      <img src="./images/img2.jpg" alt="Students Activity" onclick="openLightbox(this.src)" />
+      <img src="./images/img3.jpg" alt="Cultural Function" onclick="openLightbox(this.src)" />
+      <img src="./images/img4.jpg" alt="Science Exhibition" onclick="openLightbox(this.src)" />
+      <img src="./images/img5.jpg" alt="Sports Day" onclick="openLightbox(this.src)" />
+      <img src="./images/img6.jpg" alt="Annual Day" onclick="openLightbox(this.src)" />
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="close-btn">&times;</span>
+    <img id="lightbox-img" src="" alt="full view" />
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2015–<span id="year"></span> Carmelite Convent English School. All rights reserved.</p>
+  </footer>
+
+  <!-- JS -->
+  <script>
+    function toggleMenu() {
+      const navLinks = document.getElementById("nav-links");
+      navLinks.classList.toggle("show");
+    }
+
+    function openLightbox(src) {
+      const lightbox = document.getElementById("lightbox");
+      const img = document.getElementById("lightbox-img");
+      img.src = src;
+      lightbox.style.display = "flex";
+    }
+
+    function closeLightbox() {
+      document.getElementById("lightbox").style.display = "none";
+    }
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
