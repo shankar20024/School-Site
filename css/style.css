@@ -169,6 +169,20 @@
       padding: 0.5rem 0;
       text-align: left;
     }
+    .brand {
+      justify-content: column;
+    }
+    
+    .logo {
+      height: 40px;
+      width: auto;
+      border-radius: 50%;
+      margin:0;
+    }
+    
+    .school-name {
+      font-size: 1rem;
+    }
       }
 /* Subpage Header */
 .subpage-header {
