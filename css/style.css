@@ -144,39 +144,7 @@
   }
   
   
-  /* Responsive Styling */
-  @media (max-width: 768px) {
-    .main-nav {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-    .hamburger {
-      display: block;
-    }
-    .main-nav ul {
-      display: none;
-      flex-direction: column;
-      width: 100%;
-      margin-top: 1rem;
-      background: linear-gradient(to right, #1a2980, #26d0ce);
-      padding: 1rem;
-      border-radius: 10px;
-    }
-    .main-nav ul.show {
-      display: flex;
-    }
-    .main-nav ul li a {
-      padding: 0.5rem 0;
-      text-align: left;
-    }
-    .brand {
-      justify-content: column;
-    }
-     
-    .school-name {
-      font-size: 1rem;
-    }
-      }
+  
 /* Subpage Header */
 .subpage-header {
     background: linear-gradient(to right, #1a2980, #26d0ce);
@@ -442,7 +410,39 @@
       transform: translateY(0);
     }
   }
-    
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .main-nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .hamburger {
+    display: block;
+  }
+  .main-nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+    background: linear-gradient(to right, #1a2980, #26d0ce);
+    padding: 1rem;
+    border-radius: 10px;
+  }
+  .main-nav ul.show {
+    display: flex;
+  }
+  .main-nav ul li a {
+    padding: 0.5rem 0;
+    text-align: left;
+  }
+  .brand {
+    justify-content: column;
+  }
+   
+  .school-name {
+    font-size: 1rem;
+  }
+    }    
 
   
   
