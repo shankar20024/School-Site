@@ -38,7 +38,7 @@
     font-size: 1.2rem;
     font-weight: bold;
     color: white;
-    white-space: nowrap;
+    white-space: wrap;
   }
   
   .main-nav ul {
@@ -436,7 +436,7 @@
     text-align: left;
   }
   .brand {
-    justify-content: column;
+    align-items: center;
   }
    
   .school-name {
